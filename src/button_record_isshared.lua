@@ -78,4 +78,8 @@ function unshareRecord()
     else
         DB.removeAllHolders(_nodeSrc, true);
     end
+    if OptionsManager.isOption("SHAREDRECORD", "unc") then
+        local wTop = UtilityManager.getTopWindow(window);
+        wTop.close();
+    end
 end

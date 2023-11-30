@@ -14,5 +14,10 @@
     <base>
         <icon name="Mattekure_Logo" file="Mattekure_Logo.png" />
         <includefile source="records.xml" />
+        <script name="SharedRecord" file="manager_sharedrecord.lua" />
+        <string name="UNSHARE">Unshare</string>
+        <string name="UNC">Unshare &#38; Close</string>
+        <string name="option_header_SharedRecord">Shared Record</string>
+        <string name="option_label_SHAREDRECORD">Button behavior</string>
     </base>
 </root>
