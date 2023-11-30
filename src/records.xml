@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <windowclass name="encounter_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="note_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="battle_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="imagewindow_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="button_toolbar" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="item_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="npc_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="parcel_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="quest_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="table_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <windowclass name="vehicle_header" merge="join">
+        <sheetdata>
+            <button_record_isshared name="isshared" insertbefore="name" />
+        </sheetdata>
+    </windowclass>
+    <template name="button_record_isshared">
+        <buttoncontrol name="button_is_shared">
+            <anchored to="rightanchor" width="20" height="20">
+                <top />
+                <right anchor="left" relation="relative" offset="-5" />
+            </anchored>
+            <icon normal="record_public" />
+            <invisible />
+            <gmvisibleonly />
+            <script file="button_record_isshared.lua" />
+        </buttoncontrol>
+    </template>
+</root>

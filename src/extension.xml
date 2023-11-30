@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="3.0">
+    <announcement>
+        <text>Shared Record v1.0\rCreated by mattekure </text>
+        <font>systemfont</font>
+        <icon>Mattekure_Logo</icon>
+    </announcement>
+    <properties>
+        <name>Feature: Shared Record</name>
+        <version>1.0</version>
+        <author>mattekure</author>
+        <description>Adds a button to records that indicates if its shared or not.</description>
+    </properties>
+    <base>
+        <icon name="Mattekure_Logo" file="Mattekure_Logo.png" />
+        <includefile source="records.xml" />
+    </base>
+</root>
