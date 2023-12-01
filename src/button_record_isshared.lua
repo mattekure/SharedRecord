@@ -15,21 +15,21 @@ function onInit()
         DB.addHandler(_nodeSrc, "onObserverUpdate", self.onUpdate)
     else
         _nodeSrc = nil;
-        setVisible(false)
+        self.setVisible(false)
     end
 end
 
 function onUpdate()
     if DB.isPublic(_nodeSrc) then
-        setTooltipText("Record is shared with all players, click to Unshare")
-        setIcons("record_public");
-        setVisible(true);
+        self.setTooltipText("Record is shared with all players, click to Unshare")
+        self.setIcons("record_public");
+        self.setVisible(true);
     elseif self.isShared() then
-        setTooltipText("Record is shared only with " .. self.genSharedList() .. ". Click to Unshare")
-        setIcons("record_shared");
-        setVisible(true);
+        self.setTooltipText("Record is shared only with " .. self.genSharedList() .. ". Click to Unshare")
+        self.setIcons("record_shared");
+        self.setVisible(true);
     else
-        setVisible(false);
+        self.setVisible(false);
     end
 end
 
