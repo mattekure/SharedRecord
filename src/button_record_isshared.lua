@@ -20,6 +20,9 @@ function onInit()
 end
 
 function onUpdate()
+    if CombatManager.getCTFromNode(_nodeSrc) then
+        return;
+    end
     if DB.isPublic(_nodeSrc) then
         self.setTooltipText("Record is shared with all players, click to Unshare")
         self.setIcons("record_public");
